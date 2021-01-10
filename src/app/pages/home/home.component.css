@@ -5,3 +5,9 @@
 .btn {
   background-color: #eb1889;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

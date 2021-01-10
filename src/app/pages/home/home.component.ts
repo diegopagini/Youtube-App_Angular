@@ -13,6 +13,10 @@ export class HomeComponent implements OnInit {
   constructor(private youtubeService: YoutubeService) {}
 
   ngOnInit(): void {
+    this.loadVideos();
+  }
+
+  loadVideos() {
     this.youtubeService.getVideos().subscribe((resp) => {
       this.videos.push(...resp);
     });

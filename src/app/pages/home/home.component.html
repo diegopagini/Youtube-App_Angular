@@ -12,7 +12,7 @@
         <p>{{ video.description | slice: 0:160 }}...</p>
       </div>
       <div class="card-title grey-text text-darken-4">
-        <strong>Publicado: </strong>{{ video.publishedAt | date }}
+        <h5><strong>Publicado: </strong>{{ video.publishedAt | date }}</h5>
       </div>
       <div class="card-action">
         <a (click)="showVideo(video)" class="waves-effect waves-light btn"
@@ -23,8 +23,8 @@
   </div>
 </div>
 
-<div class="row mt-5 mb-5 center">
+<div class="row center">
   <div class="col">
-    <button class="btn btn-primary btn-lg">Siguiente Pagina</button>
+    <button class="btn" (click)="loadVideos()">Siguiente Pagina</button>
   </div>
 </div>
