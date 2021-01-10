@@ -12,7 +12,7 @@
         <span class="card-title">{{ video.title | slice: 0:80 }}...</span>
       </div>
       <div class="card-content">
-        <p>{{ video.description | slice: 0:160 }}...</p>
+        <p>{{ video.description | slice: 0:170 }}...</p>
       </div>
       <div class="card-title grey-text text-darken-4">
         <h5><strong>Publicado: </strong>{{ video.publishedAt | date }}</h5>
@@ -30,4 +30,10 @@
   <div class="col">
     <button class="btn" (click)="loadVideos()">Más Videos</button>
   </div>
+</div>
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large btn pulse">
+    <i (click)="navigateToBook()" class="material-icons">add</i>
+  </a>
 </div>
