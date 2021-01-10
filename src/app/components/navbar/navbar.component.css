@@ -1,0 +1,15 @@
+nav {
+  background-color: #eb1889;
+}
+
+.nav-wrapper {
+  width: 100%;
+}
+
+.logo {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.logo:hover {
+  cursor: pointer;
+}

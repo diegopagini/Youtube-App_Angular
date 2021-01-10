@@ -1,3 +1,7 @@
-/* .card-columns {
-  column-count: 4;
-} */
+.card-content {
+  word-break: break-all;
+}
+
+.btn {
+  background-color: #eb1889;
+}
