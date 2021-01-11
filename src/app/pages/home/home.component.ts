@@ -12,7 +12,13 @@ declare var M;
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   videos: Video[] = [];
-  constructor(private youtubeService: YoutubeService, private router: Router) {}
+  canVisitBook: boolean = true;
+
+  constructor(private youtubeService: YoutubeService, private router: Router) {
+    if (localStorage.getItem('visited')) {
+      this.canVisitBook = false;
+    }
+  }
 
   ngOnInit(): void {
     this.loadVideos();
@@ -56,7 +62,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   navigateToBook() {
-    window.location.href =
-      'https://www.amazon.com/-/es/Alan-Buscaglia/dp/B08GRKFSD9';
+    if (this.canVisitBook) {
+      window.location.href =
+        'https://www.amazon.com/-/es/Alan-Buscaglia/dp/B08GRKFSD9';
+      localStorage.setItem('visited', 'isVisited');
+    } else {
+      return;
+    }
   }
 }

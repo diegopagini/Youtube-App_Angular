@@ -15,10 +15,14 @@
         <p>{{ video.description | slice: 0:170 }}...</p>
       </div>
       <div class="card-title grey-text text-darken-4">
-        <h5><strong>Publicado: </strong>{{ video.publishedAt | date }}</h5>
+        <h5 class="center">
+          <strong>Publicado: </strong>{{ video.publishedAt | date }}
+        </h5>
       </div>
       <div class="card-action">
-        <a (click)="showVideo(video)" class="waves-effect waves-light btn"
+        <a
+          (click)="showVideo(video)"
+          class="waves-effect waves-light btn center"
           >Ver Video</a
         >
       </div>
@@ -32,7 +36,7 @@
   </div>
 </div>
 
-<div class="fixed-action-btn">
+<div *ngIf="canVisitBook" class="fixed-action-btn">
   <a class="btn-floating btn-large btn pulse">
     <i (click)="navigateToBook()" class="material-icons">add</i>
   </a>

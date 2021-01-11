@@ -9,7 +9,12 @@ nav {
 .logo {
   font-size: 20px;
   text-transform: uppercase;
+  margin-left: 10%;
 }
 .logo:hover {
   cursor: pointer;
+}
+
+.noDisplay {
+  display: none;
 }
