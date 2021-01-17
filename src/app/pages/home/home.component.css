@@ -1,9 +1,33 @@
+.title-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .title-container > img {
+    width: 75px;
+  }
+}
+
 .card-content {
   word-break: break-all;
 }
 
+.card-title {
+  padding: 0 !important;
+}
+
 .btn {
   background-color: #eb1889;
+}
+
+.date {
+  font-size: 20px;
 }
 
 .center {

@@ -7,7 +7,7 @@ nav {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 35px;
   text-transform: uppercase;
   margin-left: 10%;
 }
@@ -17,4 +17,10 @@ nav {
 
 .noDisplay {
   display: none;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    font-size: 20px;
+  }
 }

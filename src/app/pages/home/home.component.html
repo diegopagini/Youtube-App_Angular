@@ -1,4 +1,10 @@
-<h1 class="mt-3 fw-light animate__animated animate__fadeIn">Youtube Videos</h1>
+<div class="title-container">
+  <img
+    src="https://yt3.ggpht.com/ytc/AAUvwnidYtpfmvRgE4bJUJ6rQw7QRdx1ydU6JnQbTspr=s88-c-k-c0x00ffffff-no-rj"
+    alt="Logo"
+  />
+  <h1 class="animate__animated animate__fadeIn title">Youtube Videos</h1>
+</div>
 <hr />
 
 <div class="row">
@@ -15,7 +21,7 @@
         <p>{{ video.description | slice: 0:170 }}...</p>
       </div>
       <div class="card-title grey-text text-darken-4">
-        <h5 class="center">
+        <h5 class="center-align date">
           <strong>Publicado: </strong>{{ video.publishedAt | date }}
         </h5>
       </div>
