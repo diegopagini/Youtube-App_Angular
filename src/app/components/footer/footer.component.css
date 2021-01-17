@@ -5,3 +5,7 @@
 li {
   cursor: pointer;
 }
+
+.question {
+  text-align: center;
+}
